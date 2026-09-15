@@ -5,3 +5,9 @@ pull_request_rules:
     actions:
       comment:
         message: VM4_SYMLINK_CACHE_REPO_A_MARKER
+  - name: vm4 unrelated default branch push activation probe
+    conditions:
+      - title = VM4_SYMLINK_UNRELATED_PUSH_PROBE
+    actions:
+      comment:
+        message: VM4_SYMLINK_UNRELATED_PUSH_POLICY_ACTIVE
