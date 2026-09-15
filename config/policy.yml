@@ -5,3 +5,9 @@ pull_request_rules:
     actions:
       comment:
         message: VM4_SYMLINK_CACHE_REPO_A_MARKER
+  - name: vm4 symlink natural expiry probe
+    conditions:
+      - title = VM4_SYMLINK_TTL_PROBE_NEVER
+    actions:
+      comment:
+        message: VM4_SYMLINK_TTL_PROBE_20260915
